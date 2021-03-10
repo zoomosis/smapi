@@ -465,7 +465,7 @@ static dword _XPENTRY JamReadMsg(MSGH * msgh,
     if(msg)
     {
         /* zero all fields */
-        memset(msg, 0, sizeof *msg);
+        memset(msg, 0, sizeof(*msg));
 
         /* make msg */
         msg->attr = Jam_JamAttrToMsg(msgh);
